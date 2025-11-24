@@ -116,11 +116,7 @@ Instead of raw printed messages, the output is presented in a:
 - Multi-line support
 - Responsiveness with typing animation
 
-The design goal is to make the reviewer’s experience pleasant and effortless to read, similar to developer tools like:
-
-- GitHub Actions logs
-- Poetry / Pipenv output
-- AWS CLI prettifiers
+The design goal is to make the reviewer’s experience pleasant and effortless to read.
 
 ### 4. Typing Animation  
 A lightweight typing animation (`typing_print()`) adds:
