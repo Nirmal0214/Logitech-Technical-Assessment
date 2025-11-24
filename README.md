@@ -95,13 +95,14 @@ Below is a short demonstration of the parser running in the terminal:
 
 ![Image](https://github.com/user-attachments/assets/5c0240b9-8fac-4ec1-85b9-392255c9999e)
 
+
 ---
 
 ## Design Decisions & Reasoning
 
 This section explains the thought process behind the implementation, highlighting clarity, maintainability, and user-focused design.
 
----
+
 
 ### **1. Clean Separation of Concerns**
 I intentionally separated the project into the following layers:
@@ -111,7 +112,7 @@ I intentionally separated the project into the following layers:
 
 This prevents mixing logic, keeps each component easy to test, and aligns with real-world software engineering practices.
 
----
+
 
 ### **2. Minimal Dependencies**
 The solution uses only:
@@ -120,7 +121,7 @@ The solution uses only:
 
 This keeps the project lightweight and easy to run anywhere without complex setup.
 
----
+
 
 ### **3. Block View for Human-Friendly Output**
 Instead of dumping raw parsed text, I chose a **well-structured Block View** for readability:
@@ -132,7 +133,7 @@ Instead of dumping raw parsed text, I chose a **well-structured Block View** for
 
 This gives a polished, professional output suitable for both engineers and reviewers.
 
----
+
 
 ### **4. Typing Animation for Better UX**
 I added a simple typing effect (`typing_print()`) to give the CLI more personality.
@@ -143,7 +144,7 @@ I added a simple typing effect (`typing_print()`) to give the CLI more personali
 
 This balances professionalism and creativity without slowing execution.
 
----
+
 
 ### **5. Lightweight Progress Indicator**
 Even though the parsing is fast, I added a subtle progress bar to:
@@ -154,7 +155,7 @@ Even though the parsing is fast, I added a subtle progress bar to:
 
 This mirrors patterns used in real tools (package managers, CLI frameworks, etc.).
 
----
+
 
 ### **6. Defensive Programming**
 The parser validates:
@@ -166,7 +167,6 @@ The parser validates:
 
 This ensures reliability even if the file is corrupted.
 
----
 
 ### **7. Engineering Communication**
 Throughout the code I added:
@@ -178,7 +178,6 @@ Throughout the code I added:
 
 These mimic real production-quality Python code and show attention to detail.
 
----
 
 ### **8. Professional Markdown Documentation**
 The README is structured into:
