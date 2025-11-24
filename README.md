@@ -85,10 +85,14 @@ Below is a short demonstration of the parser running:
 
 ### 1. Clean Separation of Concerns  
 - `parser.py`
+
   Handles only binary parsing. No printing. No styling.
+
   This makes it reusable in tests, future UI/CLI tools, or even another language binding.
 - `main.py`
+
   Manages CLI, animations, progress bar, and message rendering.
+
   Keeping UI logic separate makes the program easier to maintain and extend.
 
 This keeps the project modular and easy to maintain.
