@@ -38,16 +38,16 @@ My parser loops over the file and, for each message:
 
 ## 🧱 Project Structure
 
-logitech-log-parser/
-│
+Logitech-Techinal-Assessment/
 ├── src/
-│   ├── parser.py        # Binary parsing logic (LogMessage + parse_log_file)
-│   ├── main.py          # CLI entry point, animations, and block view
-│   └── __init__.py
+│ ├── parser.py # Binary parsing logic (LogMessage + parse_log_file)
+│ ├── main.py # CLI entry point, animations, and block view
+│ └── init.py
 │
-├── logi.bin             # Provided binary file (input)
-├── requirements.txt     # Python dependencies (rich, etc.)
-└── README.md            # This file
+├── logi.bin # Provided binary file (input)
+├── Execution.gif # Demo GIF used in README
+├── requirements.txt # Python dependencies (rich, etc.)
+└── README.md # Project documentation
 
 ---
 
