@@ -96,7 +96,9 @@ This keeps the project modular and easy to maintain.
 ### 2. Minimal Dependencies  
 Only one external library is used:  
 - `rich` → color, animation, panels, progress bars
+
 All other components rely on Python’s standard library:
+
 - `struct` for binary unpacking
 - `os` / `argparse` for CLI
 - `time` for animations
