@@ -77,7 +77,7 @@ python -m src.main --input logi.bin
 
 Below is a short demonstration of the parser running:
 
-![Image](https://github.com/user-attachments/assets/5c0240b9-8fac-4ec1-85b9-392255c9999e)
+![Image]([https://github.com/user-attachments/assets/5c0240b9-8fac-4ec1-85b9-392255c9999e](https://github.com/Nirmal0214/Logitech-Technical-Assessment/blob/main/assets/Output.gif))
 
 ---
 
