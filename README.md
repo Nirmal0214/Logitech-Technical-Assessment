@@ -97,11 +97,8 @@ This keeps the project modular and easy to maintain.
 Only one external library is used:  
 - `rich` → color, animation, panels, progress bars
 All other components rely on Python’s standard library:
-
 - `struct` for binary unpacking
-
 - `os` / `argparse` for CLI
-
 - `time` for animations
 
 Everything else relies on Python’s standard library.
@@ -114,7 +111,9 @@ Instead of raw printed messages, the output is presented in a:
 - Human-readable label styling
 - Multi-line support
 - Responsiveness with typing animation
+
 The design goal is to make the reviewer’s experience pleasant and effortless to read, similar to developer tools like:
+
 - GitHub Actions logs
 - Poetry / Pipenv output
 - AWS CLI prettifiers
@@ -124,6 +123,7 @@ A lightweight typing animation (`typing_print()`) adds:
 - Personality  
 - Smooth readability  
 - Modern CLI feel
+
 This animation is intentionally subtle (0.05s delay), preserving clarity while adding polish.
 
 ### 5. Defensive Programming  
@@ -133,6 +133,7 @@ The code includes checks for:
 - Sequence length mismatch
 - Unexpected EOF
 - Invalid UTF-8 decoding (handled via errors="replace")
+
 This ensures the program behaves gracefully even with corrupted input, which is critical in low-level parsing tasks.
 
 ### 6. Professional Documentation  
@@ -142,7 +143,7 @@ This README includes:
 - Project structure  
 - Installation steps  
 - Output preview  
-- Engineering rationale  
+- Engineering reasoning 
 
 ---
 
