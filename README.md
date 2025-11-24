@@ -125,8 +125,6 @@ This README includes:
 - Output preview  
 - Engineering rationale  
 
-Similar to well-maintained open-source repositories.
-
 ---
 
 ## ✔ Final Notes  
