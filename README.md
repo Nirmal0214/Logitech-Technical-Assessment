@@ -48,21 +48,6 @@ logitech-Techinal-Assessment/
 ├── requirements.txt # Python dependencies (rich, etc.)
 └── README.md
 ---
-logitech/
-└── logs/
-    ├── automation/
-    │   ├── adb_controller.log
-    │   ├── calculator.py
-    │   ├── ui_parser.py
-    │   └── parser.py
-    ├── device/
-    │   ├── logcat_dump.txt
-    │   └── package_details.txt
-    ├── behave/
-    │   └── bdd_calculator.txt
-    └── screenshots/
-        └── <scenario-name>.png
-```
 
 ## ▶️ Usage Instructions
 
