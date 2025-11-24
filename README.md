@@ -93,7 +93,7 @@ Output uses Rich for colors and formatting
 
 Below is a short demonstration of the parser running in the terminal:
 
-![Execution Demo](assets/execution.gif)
+![Image](https://github.com/user-attachments/assets/5c0240b9-8fac-4ec1-85b9-392255c9999e)
 
 ---
 
