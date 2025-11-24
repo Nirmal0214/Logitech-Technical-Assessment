@@ -89,12 +89,12 @@ Output uses Rich for colors and formatting
 
 ---
 
-## 🎞️ Demo (Execution GIF)
+## 🎬 Demo (Execution GIF)
+
 Below is a short demonstration of the parser running in the terminal:
 
-```bash
-/mnt/data/Execution.gif
-```
+![Execution Demo](assets/execution.gif)
+
 ---
 
 ## Design Decisions & Reasoning
