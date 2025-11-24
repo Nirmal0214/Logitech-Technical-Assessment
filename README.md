@@ -84,37 +84,56 @@ Below is a short demonstration of the parser running:
 ## 🧠 Design Decisions & Reasoning
 
 ### 1. Clean Separation of Concerns  
-- `parser.py` handles all binary parsing logic.  
-- `main.py` manages CLI, animations, and user interaction.  
+- `parser.py`
+  Handles only binary parsing. No printing. No styling.
+  This makes it reusable in tests, future UI/CLI tools, or even another language binding.
+- `main.py`
+  Manages CLI, animations, progress bar, and message rendering.
+  Keeping UI logic separate makes the program easier to maintain and extend.
 
 This keeps the project modular and easy to maintain.
 
 ### 2. Minimal Dependencies  
 Only one external library is used:  
-- `rich` → color, animation, panels, progress bars  
+- `rich` → color, animation, panels, progress bars
+All other components rely on Python’s standard library:
+
+- `struct` for binary unpacking
+
+- `os` / `argparse` for CLI
+
+- `time` for animations
 
 Everything else relies on Python’s standard library.
 
 ### 3. Block View Output  
-Each message is presented inside a bordered block with:
-- Colored headings  
-- Preserved line breaks  
-- Human-friendly formatting  
-
-This makes the output easy to read and visually appealing.
+Instead of raw printed messages, the output is presented in a:
+-Colored block
+- With preserved line breaks
+- Clean separator before and after
+- Human-readable label styling
+- Multi-line support
+- Responsiveness with typing animation
+The design goal is to make the reviewer’s experience pleasant and effortless to read, similar to developer tools like:
+- GitHub Actions logs
+- Poetry / Pipenv output
+- AWS CLI prettifiers
 
 ### 4. Typing Animation  
 A lightweight typing animation (`typing_print()`) adds:
 - Personality  
 - Smooth readability  
-- Modern CLI feel  
+- Modern CLI feel
+This animation is intentionally subtle (0.05s delay), preserving clarity while adding polish.
 
 ### 5. Defensive Programming  
-The parser includes checks for:
-- Missing files  
-- Incorrect byte counts  
-- Unexpected end-of-file  
-- Corrupt data  
+The code includes checks for:
+- File not found
+- Incomplete integer reads
+- Sequence length mismatch
+- Unexpected EOF
+- Invalid UTF-8 decoding (handled via errors="replace")
+This ensures the program behaves gracefully even with corrupted input, which is critical in low-level parsing tasks.
 
 ### 6. Professional Documentation  
 This README includes:
